@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.CategoryListActivity">
+
+    <EditText
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:drawableStart="@drawable/search_icon"
+        android:drawableLeft="@drawable/search_icon"
+        android:drawablePadding="10sp"
+        android:drawableTint="#504B4B"
+        android:hint="Search Here"
+        android:iconifiedByDefault="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/category"
+        android:layout_width="336dp"
+        android:layout_height="450dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <Button
+        android:id="@+id/insert_btn"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:onClick="insert_btn_OnClick"
+        android:text="Insert New Category"
+        android:textColor="#F1F9FF"
+        android:textSize="18sp"
+        app:backgroundTint="#3A3D49"
+        app:icon="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
